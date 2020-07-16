@@ -1,0 +1,106 @@
+/* font-family: 'Open Sans', sans-serif; 400
+font-family: 'Poppins', sans-serif; 400, 700
+ Violet: hsl(257, 40%, 49%) */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-image: url(../images/bg-desktop.svg);
+  background-color: violet;
+  background-color: hsl(257, 40%, 49%);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.LHS {
+  margin-top: 3.5%;
+  margin-left: 5%;
+}
+
+.RHS {
+  margin-top: 6.5%;
+  margin-left: 4%;
+  width: 465px;
+}
+
+.huddle {
+  padding: 3% 4%;
+}
+
+.register {
+  margin-top: 2.5%;
+  width: 200px;
+  height: 55px;
+  border-radius: 25px;
+}
+
+.heading {
+  font-size: 40px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: white;
+}
+
+.content {
+  padding-top: 1.5%;
+  color: white;
+}
+
+.circle {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: inline-block;
+  margin: 10px;
+}
+
+.white {
+  color: white;
+}
+
+.padd {
+  padding: 20px;
+}
+
+.foot {
+  text-align: right;
+}
+
+@media (max-width:800px) {
+  body {
+    background-image: url(../images/bg-mobile.svg);
+  }
+
+  .wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .LHS {
+    margin-bottom: 16%;
+  }
+
+  .RHS {
+    margin: auto;
+    width: 500px;
+  }
+
+  .foot {
+    margin: 20% auto 5%;
+    text-align: center;
+  }
+
+  .register {
+    width: 400px;
+    height: 75px;
+    border-radius: 50px;
+  }
+
+  img {
+    width: 600px;
+  }
+}
